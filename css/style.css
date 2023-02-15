@@ -1,0 +1,314 @@
+/*reset*/
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* POUR LA PAGE INDEX */
+.container{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/carbon.jpg);
+    background-size: cover;
+    
+}
+.titre{
+    width: 50%;
+    margin: 2rem 2rem;
+    height: 300px;
+}
+
+.titre h1{
+    font-size: 4rem;
+    color:green;
+}
+.titre p{
+    font-size: 2rem;
+}
+.formulaire{
+    width: 50%;
+    
+    margin: 2rem 2rem;
+}
+
+.formulaire fieldset{
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 2rem 2rem;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0,0, 0.75);
+}
+.formulaire fieldset input{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 2rem;
+}
+.btn{
+    width: 150px;
+    margin: auto;
+    padding: 8px 8px;
+
+}
+.btn-compte{
+    width: 200px;
+    background-color: blue;
+    color: white;
+}
+.btn-connect{
+    background-color: green;
+    color: white;
+}
+.btn-connect:hover{
+    background-color: greenyellow;
+    color: black;
+    
+}
+
+.formulaire fieldset a{
+    margin: 15px ;
+}
+
+
+/* POUR LA HOME PAGE*/
+
+.container-home{
+    height: 100vh;
+    background-color: blueviolet;
+    display:flex;
+    flex-flow: row nowrap;
+
+}
+.home-grand{
+    flex:2;
+    background-color: aqua;
+    display: flex;
+    flex-flow: column;
+}
+
+/* la partie de droite*/
+.home-petit{
+    
+    
+    background-color: bisque;
+    flex:1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15,1fr);
+    grid-template-areas: 
+        "e1"
+        "e2"
+        "e3"
+        "e4"
+        "e5"
+        "e6"
+        "e7"
+        "e8"
+        "e9"
+        "e10"
+        "e11"
+        "e12"
+        "e13"
+        "e14"
+        "e15";
+}
+
+.droite1{
+    grid-area: e1;
+    background-color: orange;
+    display: flex;
+    
+    align-items: center;
+
+}
+.droite2{
+    grid-area: e2;
+    background-color: antiquewhite;
+    display: flex;
+    
+    align-items: center;
+}
+
+.droite3{
+    grid-area: e3;
+    background-color: orange;
+    display: flex;
+    
+    align-items: center;
+
+}
+.droite4{
+    grid-area: e4;
+    background-color: antiquewhite;
+    display: flex;
+    
+    align-items: center;
+}
+
+.droite5{
+    grid-area: e5;
+    background-color: orange;
+    display: flex;
+    
+    align-items: center;
+}
+.droite6{
+    grid-area: e6;
+    background-color: antiquewhite;
+    display: flex;
+    
+    align-items: center;
+}
+.droite7{
+    grid-area: e7;
+    background-color: orange;
+}
+.droite8{
+    grid-area: e8;
+    background-color: antiquewhite;
+}
+.droite9{
+    grid-area: e9;
+    background-color: orange;
+
+}
+.droite10{
+    grid-area: e10;
+    background-color: antiquewhite;
+
+}
+.droite11{
+    grid-area: e11;
+    background-color: orange;
+
+}
+
+.droite12{
+    grid-area: e12;
+    background-color: antiquewhite;
+
+}
+.droite13{
+    grid-area: e13;
+    background-color: orange;
+
+}
+.droite14{
+    grid-area: e14;
+    background-color: antiquewhite;
+
+}
+.droite15{
+    grid-area: e15;
+    background-color: orange;
+
+}
+
+
+
+
+
+.home-header{
+    background-color: gray;
+    height: 20%;
+
+}
+.home-main{
+    background-color: yellow;
+    height: 55%;
+}
+
+.home-main h1{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.home-footer{
+    background-color: green;
+    height: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.home-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+
+
+.home-photo{
+    background-image: url(../image/boucle.png);
+    background-size: cover;
+    background-color: blueviolet;
+    
+    width: 110px;
+    height: 110px ;
+    margin:15px 10px 15px 50px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+
+}
+ul{
+    list-style: none;
+}
+
+.home-header nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+.home-header nav ul li{
+    justify-content: center;
+    
+    padding: 10px;
+}
+
+.ligne-right{
+    border-right: 1px solid black;
+}
+.prl10{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.pl10{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.btn-stat{
+    display: block;
+    margin: 15px auto;
+    
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    width: 200px;
+    height: 25px;
+    
+
+}
+.btn-stat:hover{
+   
+    background-color: olive;
+   
+    
+
+}
