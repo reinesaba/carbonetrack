@@ -33,8 +33,17 @@
                 <div class="content-energ">
                    
                     <div class="centrer-energ">
-                        <form action="#">
-                            <input class="type-energ" type="text" placeholder="Type d'énergie" />
+                        <form class="result" action="#">
+                            <!-- <input class="type-energ" type="text" placeholder="Type d'énergie" /> -->
+                    <select name="pets" class="type-energ" id="energ-select">
+                        <option value="">--Choisissez le type d'energie:--</option>
+                        <option id="myselection" value="12">Eolien</option>
+                        <option id="myselection" value="75">solaire</option>
+                        <option id="myselection"  value="1000">charbon</option>
+                        <option id="myselection" value="450">gaz naturel</option>
+                        <option id="myselection" value="533">fioul</option>
+                        <option id="myselection" value="633">granule</option>
+                    </select>
                             <input class="qtt-energ" type="text" placeholder="Quantité" />
                             
                         </form>
